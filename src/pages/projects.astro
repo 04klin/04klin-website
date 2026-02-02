@@ -4,12 +4,23 @@ import Project from "../components/Project.astro";
 import Sidebar from "../components/Sidebar.astro";
 const projects = [
   {
-    title: "In Progress",
+    title: "University: Final Paper on BFS Algorithms",
+    desc: [
+      "Performance analysis of BFS algorithms",
+      "Compared top-down, bottom-up, and hybrid (direction optimizing) algorithms",
+      "Tested variable number of threads, datasets, and impl. (atomic ops vs critical sections)",
+      "Found up to 16x speed up using the top-down atomic algo with 16 cores on a dense dataset compared to a top-down critical section algorithm",
+    ],
+    link_desc: [`View my paper \u2192`],
+    link: "/assets/kevin_lin_final_paper_parallel_bfs_algorithms_and_optimizations.pdf",
+    tech: ["OpenMP", "C++", "Shell"],
+  },
+  {
+    title: "In Progress...",
     desc: ["TODO"],
     tech: ["Node.js", "NPM"],
   },
 ];
-// Can add links in the future to the projects
 ---
 
 <!doctype html>
@@ -41,6 +52,8 @@ const projects = [
                       title={project.title}
                       desc={project.desc}
                       tech={project.tech}
+                      link={project.link}
+                      link_desc={project.link_desc}
                     />
                   ))
                 }
