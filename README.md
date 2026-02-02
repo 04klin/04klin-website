@@ -1,22 +1,9 @@
-# Codefolio
-An open-source portfolio for developers to showcase their projects, coding skills, and personal story.
+# Hi there, I'm Kevin Lin 👋
 
-## Quick Start
+[![Portfolio Status](https://img.shields.io/github/deployments/04klin/github-pages?label=Deployment&logo=github)](https://04klin.github.io/)
 
-```bash
-npm create astro@latest -- --template danielunited/codefolio
+Welcome to the repository for my [personal portfolio website](https://04klin.github.io)! This site serves as a hub for my projects and resume.
 
-# Follow the interactive prompts to create your project
+## 🚀 About Me
 
-cd <your-project-name>
-npm run dev     # Starts the local development server at http://localhost:4321
-```
-
-## Deployment
-The current branch can be fully static built and deployed on any static hosting platform.
-
-For deployment methods on various platforms, refer to the [Astro Official Deployment Guide](https://docs.astro.build/en/guides/deploy/).
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
+I am a Computer Science student at **NC State University** (Class of 2026) with a passion for software development. My interests range from networking and operating systems to full-stack and the cloud.
