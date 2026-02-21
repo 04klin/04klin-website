@@ -31,11 +31,11 @@ const { selectedItem } = Astro.props;
       <a
         href="/"
         class={`nav-link-container w-inline-block ${
-          selectedItem === 'home' ? 'w--current' : ''
+          selectedItem === "home" ? "w--current" : ""
         }`}
       >
         <img
-          src="/assets/home.svg"
+          src="/assets/icons/home.svg"
           loading="eager"
           alt=""
           class="nav-link-image"
@@ -45,14 +45,12 @@ const { selectedItem } = Astro.props;
       <a
         href="/work-experience"
         class={`nav-link-container w-inline-block ${
-          selectedItem === 'work-experience' ? 'w--current' : ''
+          selectedItem === "work-experience" ? "w--current" : ""
         }`}
-        aria-current={
-          selectedItem === 'work-experience' ? 'page' : undefined
-        }
+        aria-current={selectedItem === "work-experience" ? "page" : undefined}
       >
         <img
-          src="/assets/code.svg"
+          src="/assets/icons/code.svg"
           loading="eager"
           alt=""
           class="nav-link-image"
@@ -62,11 +60,11 @@ const { selectedItem } = Astro.props;
       <a
         href="/projects"
         class={`nav-link-container w-inline-block ${
-          selectedItem === 'projects' ? 'w--current' : ''
+          selectedItem === "projects" ? "w--current" : ""
         }`}
       >
         <img
-          src="/assets/code-solid.svg"
+          src="/assets/icons/code-solid.svg"
           loading="eager"
           alt=""
           class="nav-link-image"
@@ -76,11 +74,11 @@ const { selectedItem } = Astro.props;
       <a
         href="/photography"
         class={`nav-link-container w-inline-block ${
-          selectedItem === 'photography' ? 'w--current' : ''
+          selectedItem === "photography" ? "w--current" : ""
         }`}
       >
         <img
-          src="/assets/camera-solid-full.svg"
+          src="/assets/icons/camera-solid-full.svg"
           loading="eager"
           alt=""
           class="nav-link-image"
@@ -97,7 +95,7 @@ const { selectedItem } = Astro.props;
       tabindex="0"
     >
       <img
-        src="/assets/menu.svg"
+        src="/assets/icons/menu.svg"
         loading="eager"
         alt=""
         class="navbar-icon"
@@ -106,15 +104,15 @@ const { selectedItem } = Astro.props;
   </div>
 
   <script>
-    import { setupNav } from '../scripts/nav.js';
-    
+    import { setupNav } from "../scripts/nav.js";
+
     let cleanup;
-    document.addEventListener('astro:page-load', () => {
+    document.addEventListener("astro:page-load", () => {
       if (cleanup) cleanup();
       cleanup = setupNav();
     });
 
-    document.addEventListener('astro:before-swap', () => {
+    document.addEventListener("astro:before-swap", () => {
       if (cleanup) cleanup();
     });
   </script>

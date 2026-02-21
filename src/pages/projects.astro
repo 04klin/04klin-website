@@ -4,6 +4,26 @@ import Project from "../components/Project.astro";
 import Sidebar from "../components/Sidebar.astro";
 const projects = [
   {
+    title: "Senior Design: GitHub Commit History Replay",
+    desc: [
+      "Problem: Teaching staff spends a lot of time to understand what students have tried on their assignments",
+      "Solution: Web app with easy interface to let teaching staff step through the commit history of a file",
+      "Architect a system to handle up to 20 concurrent users with up to 2000 repositories each",
+      "Designed and implemented endpoints and UI components for the file explorer and branch dropdown functionality",
+    ],
+    link_desc: [`Work in progress: Demo \u2192`],
+    link: "https://drive.google.com/file/d/1eeMwEnQNaOS57KqzX8oi7qN7MaZsoWa9/view?usp=sharing",
+    tech: [
+      "React",
+      "Typescript",
+      "Spring",
+      "Java",
+      "PostgreSQL",
+      "Docker",
+      "Tailwind",
+    ],
+  },
+  {
     title: "University: Final Paper on BFS Algorithms",
     desc: [
       "Performance analysis of BFS algorithms",
@@ -15,10 +35,28 @@ const projects = [
     link: "/assets/kevin_lin_final_paper_parallel_bfs_algorithms_and_optimizations.pdf",
     tech: ["OpenMP", "C++", "Shell"],
   },
+
   {
-    title: "In Progress...",
-    desc: ["TODO"],
-    tech: ["Node.js", "NPM"],
+    title: "Liquid Rocketry Lab: Mission Control",
+    desc: [
+      "Led a team of 4 to maintain and develop new features for the mission control platform using agile methodology",
+      "Led the development of a feature to monitor 10+ unique events, improving real-time data visibility",
+      "Enhanced 10+ UI components which contribute to safer tests",
+      "Redesigned backend event system architecture to improve data reliability and decrease code complexity",
+    ],
+    link_desc: [`View the club \u2192`],
+    link: "https://liquidrocketry.com/",
+    tech: ["React", "Flask", "Docker", "MongoDB"],
+  },
+  {
+    title: "Game Jam: Breaking Legs",
+    desc: [
+      "Co-built a 2d platform game in the endless run genre",
+      "Implemented UI functionality, map generation, player movement, and enemy spawn generation",
+    ],
+    link_desc: ["View our game \u2192"],
+    link: "https://unstable-groot.itch.io/breaking-legs",
+    tech: ["Unity", "C#"],
   },
 ];
 ---
@@ -34,7 +72,7 @@ const projects = [
           <div class="back-nav-container">
             <a href="/" class="back-nav-button w-inline-block"
               ><img
-                src="/assets/back.svg"
+                src="/assets/icons/back.svg"
                 loading="lazy"
                 alt=""
                 class="back-nav-img"

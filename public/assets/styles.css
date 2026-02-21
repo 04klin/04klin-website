@@ -341,7 +341,7 @@ p {
   height: 100%;
   background-image:
     linear-gradient(rgba(28, 28, 28, 0.64), rgba(28, 28, 28, 0.64)),
-    url("./grid-top-right.svg"),
+    url("./icons/grid-top-right.svg"),
     linear-gradient(rgba(28, 28, 28, 0.24), rgba(28, 28, 28, 0.24));
   background-position:
     0 0,
